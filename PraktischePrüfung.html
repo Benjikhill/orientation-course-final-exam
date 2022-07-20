@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" Crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    <title>Vegane Burger</title>
+    <link rel="stylesheet" href="Prüfung.css">
+    <style>
+        .Hauptbilder{
+            width: 1440px;
+            height: 637px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #VeganLogo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 173px;
+            height: 140px;
+            margin: 0 auto;
+            
+        }
+        p{
+            font-family: 'fredoka', Arial, sans-serif;
+        }
+        body{
+            background-color: rgb(247, 247, 247);
+        }
+        #ue1{
+            margin: 50px 100px 0px 0px;
+        }
+        #ue2{
+            color: rgb(0, 114, 0);
+            font-size: 2rem;
+            margin-bottom: 70px;
+        }
+        #ue3{
+            color: rgb(0, 114, 0);
+            text-decoration: underline;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+        }
+        #ue4{
+            color: rgb(0, 114, 0);
+        }
+        .Zubereitung{
+            border: 6px solid rgb(0, 114, 0);
+            padding: 10px;
+            margin: -100px 200px 20px 20px;
+            width: 600px;
+            font-size: 2rem;
+        }
+        .Anleitung{
+            width: 600px;
+            margin-top: 250px;
+            font-size: 2rem;
+        }
+        ul{
+            list-style-type: none;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            
+        }
+        a:hover{
+            color: green;
+        }
+        li{
+            display: inline-block;
+            margin: 20px;
+            text-align: center;
+        }
+        button{
+            padding: 5px;
+            border: 1px solid gray;
+            background-color: gray;
+        }
+        button:hover{
+            padding: 5px;
+            cursor: pointer;
+            border: 1px solid black;
+            background-color: rgb(0, 114, 0);
+        }
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe{
+            width: 560px;
+            margin: 20px 300px 20px 0px;
+        }
+        .Newsletter{
+            margin: 20px 0px 20px 50px;
+            padding: 10px 30px 30px 30px;
+            width: 300px;
+            background-color: rgb(109, 223, 109);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .Youtube{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="ue1">
+        <div>
+            <h1 id="ue1">Vegane Burger</h1>
+            <h1 id="ue2" >Schnell & einfach!</h1>
+        </div>
+        <div class="VeganLogo">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMSEhITEhMWFhMVEhMXGBgYFRgZFhcXFxcXGBsYFxUYHSkgGh4nGxoYIjEhJSkrMC4uGB8zODMsNygtLisBCgoKDg0OGxAQGi0lICUtLS0tLS0vLS0tLS8tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMoA+gMBIgACEQEDEQH/xAAcAAEAAwEBAQEBAAAAAAAAAAAAAQUGBwQCAwj/xABKEAABAwIDAwgFCQMKBwEAAAABAAIDBBEFEiEGMVEHEyJBYXGBkTJCUqGxFCMkM2JyksHRU7LwFRc0Q2NzgqKz0kRUdIPC4fEW/8QAGQEBAAMBAQAAAAAAAAAAAAAAAAECAwQF/8QANBEAAgECBAMGBAUFAQAAAAAAAAECAxEEITFBEhNRYXGBodHwIpGxwQUyM+HxFEJDUnIj/9oADAMBAAIRAxEAPwDtKIiAIiIAiIgCKsxTHoICGvdeQ7o2DPIe5g1814vldfP9VEynYfWlOeS3ZEzQHvKi5m6kU7avszNAofIBvIHebKi//OPf/SKuaTsa4RN8mC/vUs2PohqYGuPF5c8+byUI4qj0ivF+nqWhxCH9rH+Nv6r9Y52u9FzT3OB+Crhs1R/8tF+AL8pdkqF3/DRg8WjKfNqC9Tovmy6RUA2WYz6ieeHsEpe38Ml1GXEIdzoqpnAjmpfMXafcpHMkvzR+Wfo/I0CKmotpYnOEcofTy+xKMt/uv9F3gVcoXjJSV0ERELBERAEREAREQBERAEREAREQBSoUoCEREARF4sWxOOnjzyHrs1o1c9x3NaOslCG0ldn7VtYyFjpJXBrGjUk/xc9iohNU1v1eampj6xHz0g+yD9WO06r7oMJfO9tRWC7gbxQb2Q8Cfaf2nctCoMrSnrkum77+nceDCsGhpweaYAT6Tj0nuPFzzqV70RSaxioqyQRF8yvygngCdN+nBCT6QFeGStikp3ytcHRmNxuDpbKbg8O5YbZuqnw4U5qHXpKloIJ/qHuFwDfcLW/gKGzGddQkuj36HRi4DepXPaXagVWJxtzAU0Yly3IAc4Md0z+Ss9p8el+TSywExxNFhKR0pHE2AiafV+2fDilyixUHFyWiv5GjqY4Z88MgbIBbM0i9r7r8D71T/wAnVFJrSuM0I308jruA/spDr/hcqDAdoBHBT09Kxz5pn2dK9p5vnHavJJ1eQOrs3rfwR5WgXLiN5O8niUWYhKNZcS1W627L7/Q8mEYvFUtJYSHNNnscLSMPBzepe9U+M4JzjhNC7mqlo6Mg3OHsSD1mn3L6wTGOeLopW83Ux+nGesdT2H1mnihpGbT4Z67PZ+hbIiKTUIiIAiIgCIiAIiIAiIgClQpQEIiID8K6rZDG6SQ5WMBJP8dapcFonzyCsqW2cR8xEf6lh6z9t28nqvZfE4+W1XN76alcC7hJNvDe0N3ntWkUGK+OV9lp39fDYIiKTYIvLitS6KGWRrczmRucG8covZVGH7a0UrQefZGSNWyHKR2XOh8EKSqwi7Sdj8qHbCE1E9PM5sb45XNYXGzXgdp3G68dTj0rcQlyRvmgjhY14j6RaXXdmDfW7bdXcvNhs9G6pxHnDFJA/mpc5s5m4hzc3G+tt6+8BwR95TSZ6WmlLTmdrM8C9ubB+rab7zcquZxcdSSSvfN6a5Xt2W+RQU+DtFMxxqnQPmLs8HSJkYXnTmm9IHLpuWrxgTVsPMMo3NiOWz5XiMjKQQWsALhw1tvV7hmDwwX5tnSPpPd0pHHi551K96JGlPC8MWm9VZ+39kjDx7K1DObyx0dowQ0ESH0rXzOO86da/auqDNJFR4hDkDnhzHRvJjkLQQGE72793ctksxtaRJNRQNtnE4lPFkcYNyeAJ0RompSUI3j2ZbPaxXYjHUitY+np2tp6WNzWmQ83EHOHSeOIA004b0wKur6x7n8/HFTNcRnZGOnbfk5zq+0VTbW4i6rkMEFS+YEm0MUFhp7cheM1uNrK/wBkdk5Ygx1VK52T0IQ4mNhve5G4lNzng5TrNQva+eaS8vW/YbFgsALk9p3nyVVj2EmYNkiOSpi1jf8AFjuLTuKtkVj0ZRUlZlbgWKiojJIySMJZJGd7HjeO7rB4FWSzmPRmmlbWxjo6MqWj1o9wk72fBaFjwQCDcEAg8QUK05POMtV7v69p9IiIaBERAEREAREQBERAFKhSgIVZtHiJggc9ovI4hkY4yP0aPPXwVms/WfP18Me9lNGZXcOcf0GDyzFQzOq2o2WryLHA8NFPAyIG5Au53W57tXOJ67m696IpLxioqyCIsxtXRVT2PIrGQQAEusxzXZe14dfyshWpJxjdK5ZYttDS0/RllbmOmQdJ57MjdVnNncsbJjUUobSML3xSyMYHBhJdkLHdLr0VFsRh1U55fAyMMzH6TJGS4i/qBxv/ABqVra6M1FXFSPcXRwsEs1wBzjibMaQNMoOtlW5xxqTqpTat0Vtb9b7b5LbUYRhxqXNqJ2BkQN4ILANA6pJB1uIsQDuWoQIpSsdkIKC9+/QIjiALnQBZ2q2idK4xUDOekBs6Q6RR97vWPYFIlNR1LDHcWFNHmDS+R2kcbdXPd3Dq4lZzJUUVPJXSMEtU9zTKDf5uL2GEbraX8eC9EuNQYe4MqXyy1DwHOfkJuDcWZ1NaLHohVGCSVVbNVPpqotpxJYNkbzgIcL2DXbh2dqqzjq1E5JJ/FslbLLVn5Yi+asYyeHDnxzEBzJ452A+OgzDsK1uzE1aWWrY2tcBo4OBc77zW6DvBX4bNYBPR9H5QJIiSebMeUNJ9ghxsOy1lo1KRpQpST45N33WVvJBERSdZ8SxhzXNcLtcCCDuIIsQqTZaQxmajebup3DITvdE+5YfDVvgr5Z/HPmaqkqB6LnGCTuk9AnueLf4lDMqmTU+n0ZoERFJqEREAREQBERAEREAUqFKAhUOy/TfWT/tKhzR92IBg94KvZX2BJ6gT5BUmw7LUNOTvc0vPe9xcfioMpZ1Irsb+xeIiKTULL4zgM1cbTSGGFrrtjbZznW9aQ7u4a2WoVLtCyplaYaa0eYWfK71WnqYBqXdvUjMq0VKNmr9i3MrFBPJVimpa2Z0cX1zyW5WcGMytGu8f/Fe4vRTQVIq6dnPXiEc0d7PLRuc0neexUOK7NMoKOR5qpr9TWOEbXyO0GYAXI8dwXxszjDKeHm6aN1VVvs6TLcsa4jRrpDw7Ou6onY4YvhfBPJ663t0SWf75mmbtfF1w1Ad7PMuPvGi+H45WSf0eic0e3M8MaO3KDmK8WAbWP+T1M1XYPZO6NrGjUkNbaNo1JOYqnwrG56hstC8PbUTTOLnEW5qJwD3791hoB2hTc0eIvb4tdLK3ct9Sxw6AV3Ovqat0scLrPjjBjhva+/e8CybV4zT/AMmP+RPaG5o2gM6Jb0wfR0I0CqIWFk1VhtKCOdnYHP8AYhDGlxvx3jxXo5R9nKaCmbLFGGPztZoTYix3jjpvUGLnLlScUsk03ne93o+w9OD4XU/LqZtU7nWRRSSRSEauByjK477gkHVabZzDRA6rsLB9SXAdWUsYdPEuVnRj5uPsa390L9lZI7qVCMM/Hyt9AiIpNwiIgCqdrKcvo5wPSawvb96Ppj4K2XzMzM1w4tI8whWceKLR+WHVIlijkG58bHfiAK/dUexTvoUA9gOZ+B7mj3AK8QinLign2BERC4REQBERAEREAUqFKA8uJn5mb+6f+6V49lB9Dpf7hnwVjUx5mPbxa4eYIVTsXJmoaU/2TQe8aH4KNzL/ACruf1LpERSahERAZvaXZ81s0LZCRTRAvcAdXvcbBvZYDf8AaVzDStgiLYIwMrTla2wubaXJ+JXrRDONOKk5LV7mP2S2O5h5nqCHzklwA1ZGXaki+93ar+HCGNqpKkek+NjPIm58Rl8lYoosRChCEVGK0z8ep4sPwuOF0r2Dpyvc97j6RJN7X4DqCyfKw+8EMQ3vl+At+a3K5xjUvy3F4IW6x056XC7ek8+Ya3wUMxxdlS4F/c7fN5nRmtsAOAAUoisdYREQBF8iQXLbjMACR1gHcvpAFIUIXWBPAICh2J/o3/eqP9RyvlRbEj6Iw+0+Z3nI9XqhGVH9OPcgiIpNQiIgCIiAIiIApUKUAVBsaMsUkPXDUTM8C4vb7ne5XyoKU81iMzPVqIWyN+/HZjx+EtPmoM55Si/D5/wX6Iik0C82IVXNMdJke8N1IYAXW6yBcXtwGq9KIQzwYTjUFSLwyNdbeNzh3tOoXvWG212Udf5XR3ZM27nNZoXfabb1uzrXxsdt2JS2GqIbJubJua48Hey73HsUX6nKsTwz5dVWez2fobxERSdZW7R4oKamlm62t6Pa52jR5lZrktwstikqX+nM42J35AdT4uv5BfjyoTOkdS0jN8r8x88rb+JJ8Ft6KmbFGyNos1jWtHcBZRuca/8ATENvSC83+31P2VdiOO00GkszGnhe7vwjVZzlF2mdTNbBCbSyNzF3WxlyNO0kHyK5xhGA1NWSYmF2ur3Gzb9rzvKhy2M8RjXCfLpxuzqcnKBQD+sce6N/6KjxjlHz2joo3F7iGh7wN50GVgOpvx8litoMBfRuayR8bnuFy1hJLR1Zrgb17+TymElfDf1cz/wtNveou9DjeMxEpqk7Jt27Tq+z+GGCKz3F8rzmledS55/IDQdgVmiK57cYqKsgvBj1XzVNPJ7MbyO+xAHnZe9UG1Z5w01KN80oL+yKIh779+g8VDKVXaD965Hv2epOapaePrZCwHvsL+9WClQpLxVkkEREJCIiAIiIAiIgClQpQEKh2uic1kdSwXfTSCSw3ujtaRv4TfwV8oc0EEHUEWPchWceKLREEzXta9pu1wBB4g6hfSzmAPNNK+if6Iu+nJ9aMnVl+LCfKy0aEQnxK7137wiIhcLl3KVsuIz8qhbZjj840eq47nDsJ39veuor8qqnbIx0bxdj2lrgesFQ1cwxFCNam4vwMPyd7Wc4BSzu+cA+bcfWAHontA81vVwjaDCpKGpLASMrs0b+Lb9E943eC63sfjorKdrzbnG2bIPtAb7cDvURexy4HESd6NT8yM3W/O49CDuiZ8I3u/eIXQFz0uy4+L+swjzgJ/JdCSJvhdZ/9M5btLhLqvGOZ1DS2Mk8I2suSPh3laXa3aCPDoWw04aJS2zGjcxvtuHwvvK9W0M8VE+SudYvdC2Fretzg5xFvMX7GrmQweurs1SInSZ3elcC/wB0OI0G7RHkcdWTouSpq85NvuRSTzue5z3uLnONySbklbrklw8maWcjosjyDtc4g+4D3ry4XycVMhBmLYm9euZ9uwDT3rqGEYZHTRNiibZrfMk7yT1lRFGWBwdTmKpNWS82etERXPbCz2B/SKmeqPoD5mH7rT03jvdp3NXo2oqZBG2GEHnah3NNIHoAjpPJ6rNv4qyw+jbDEyJgs1jQ0eHWoMn8U7bLPx299x+6Iik1CIiAIiIAiIgCIiAKVClAQiIgKzH8K59gyOyTRuzxP9l46jxadxCjAcW59pD25J4zlljO9ruI4tO8HtVoqbGsIc9zZ6dwZUsGh9WRv7OTiOB6lBlJOL4o+K6/ui5RVeDY02e7HNMc7PrInek3tHtNPUQrRSaRkpK6CIiEmU5RsD+UUxkaLyw3cOJb6zfLXwWC5PsZNPVMBPzc1mO7z6LvA/ErtBF9DuK4NtPhxpauWMaAPzMP2T0m+W7wVJZO55GPi6VSNePv+TYbVSc1jNNJxEXvzMXSHuABJNgNSeoBcf25xESuoagekaZrjbqc15JHnda/lKxrmqZsTDZ8+mm8MFi4+Og8SpTtc1pV403Wlsmn80ZfEJ3YvXtiYSIGXA7GA9J/edw8F1EGKCNou2ONgAFyGgAdpXONnqluG0JqXAGoqDaNp9gbiezefILO0NPU4pU5XSFziC4udfKxo4N6t9gAoTsY06/KztepPP0Oy0uM08ptHPE88GyNJ8gV7Vx/afYWSjj55knOsaRms3K5vba5uLr2bBbYSMkbT1Dy6N5ysc43LHHcLne07uxTfqdEMbKNTl1o8LOqI5wGpNh2ql2p2hZRRZ3DM91wxntHieAHWVyOtxWqrpQ1z3Pc91mxtJDRfqDd3iVLdjTE4yFF8Nry6Ha/5Vgvl56LNw5xt/K6rtqNo46OHPo97jZjQfSPaR1BYKTk0qRHmD4y+18mvkHbrrJQTPhlY4i7opAcrtRdpvYjvCrxM5quOrQVpQ4b6PU20HKbO11padhHAFzHDzB+CucI24fWTxww0+UE3kc52bKwamwAG/dftXowyqosXjtJE0SsHSbue2/Wx4sS1ZjHMYjoHvpsOYGPvaSU9J5d7DSeHxS7W5DqVaaU5Vbw7s32aHV1C5wzY/EJY+ckrHCQi4YXPNr9RcDYeAWYpdpa6jlcx0ryWOLXRyHM240I13d4U8RvPHcuzqQaT7jtyklZuLatr6B9YxhJY3pMvufcAgnhqDfguWYztRVVJPOSkM9hpysHgN/ijlYtXx1OklvfNWO7NcDuN+5Mwva4vw61wvBdpp6aKWOIm8uWzrkllt5aOJ4qtlnlDruc8P33JcHd+uqcRzv8UjZWjnv2HdMcmLY32NrRSv7ywCwPZc+5VOC1MmdwcCLMhdqxrC4SOLSLNJBHA79FndgtoX1DjSVDi/oucx51doNWOv6QIJ3roDKIZg51iQABZoGg3btTbhuRZ5nTTlz7VIvLoepSoUqx2EIiIAiIgKzGMFjqLOuY5WehKzR7T39Y+ydFXtxqWmOWuZ0NwqGAmM/3jRrGe3ctGoc0EWIuD1HchnKnnxRdn7193PmCZr2hzHBzTuINwfEL7VFNsy1ri+lkdTPOpDNY3feiOnlZfAxGth0nphMz9pC4X73RON/IlQRzGvzLxWaNAuacrtBZ0E4G8Ojd3jpN9xd5LZUu1NI85TLzb/Yka6N3k8C/gq3lFgEtBI9pDsjmPBBB0zAHXuPuR5owxXDVoSSd9/kcbKvMWr34hVRgAi4jjYN9huv5klUa03J1Tc5Xw33MD3+TSB7yFmjwaN5SVPZtE8oU16sxN9CBjImjqAAufj7gvbyd45TUnPuncWufkDbNc7QXJ3DTVV3KDAWV89/WLXDuLR+i92wmysNayV0r5Glj2gZC0aEX1u0qdzpjzP6t8Fr3epq8b21oZaeaNshcXxPaBzbxckaakcVyMG2o3hdZ/mxpf2s/4mf7E/mxpf2s/wCJn+xS02dGIw2KrtOSWXaYfbbFHVE7S46MiiA7ywOcfM+5e3kvjBrgT6sUhHfoPzX1ylYLzE7ZGj5uRjQOxzGhtvIA+a+eS+QCuAPrRSAd+h/JRuc6UljEp/7fx5HYVwnbEfTqq37Vy7suDbVyB1ZUuGoMr/jZTM7fxX9OPf8AZn1snXOhq4HtO+RrXdrXHKR7/cvx2jp3xVU7X3DhK4343cSHDv3qx2HwznagSv6MFORJI4+iMurRfvHuV5tLt6x7/o8EZLdBNIwF3+AEaePkq2yPPjCLofHK2d1vfZm3pcabHRwz1REZMbS4HeTYbm7yTvt2rje0OIipqZpgLB77gddgABftsFcYds/XYk4SyOdkP9ZITa32G8O4WVHjdCIJ5YQ7MI3Zb7rkAX077qWzXF1qlWEW1aO192dK5J4/oklxoZ3dxGRixvKHRRw1rmxMDGljHWaLC5vew6lu+SxlqG/tTSHysPyWK5Tz9Pf2Rx/BS9DbEJf0UPAu+SjCmOEtQ5oc5rwxtxfLoCSO3Uar3crVG008UthnbKG3trlc1xtfvAX3ySj6JJ/1Dv8ATjX1ysO+iMHGdvuY9T/abRilgdNrmM5OD9Ph7pP3Cu0LjPJq29fF2NkP+UrsyR0Lfhn6L7/QKVClWPRIREQBERAEREAREQH5VNJHILSMa8cHNDh714K3C4xSzQxsDGOjk6IFhcgnd3q0RwuCOKFXFPY/nBbnklivVSu9mEj8Th+isH8l9yT8o3k+p/7V9shsj8hfI/nc+dobbLa1jfiqJM8XC4KtCrGUlkio5VMDL2sqmC5jGWS3sXJDvAk+azXJ/tEykmcJdIpAATa+Vw3Gw6t912RwBFjqCsBtDycNe4vpXiMnUsd6F/skat7tVLWd0dOJw1RVedS16Gukx2mbHzhnjyccwPkBqsNPtnU1dVHDRdBheNS27iBvc6+5tupVkHJrWF1nGNo45yfIAfot/svstFRNOXpyuFnPO+3Bo6gmbLJ4ms0muBb9WWWLYZHUxuilbmafMHi09RXJsV2fFLMDT1sJex12gvDJGkdvon3LTcpu0j4stNE7K57c0jhvDTcBoPVfVc9pcInkjdLHE90bb3cBppv71Emc+OqwlU4Ixu1vmajE9rcTbFZ4a1rhbnWsvfucCWg9yzGCQRSTxtnkyROd03dm/f1XOl+1WWw1fIyqijZ0mTPDHsOrXNO8kbtBc+C0PKDshHCw1NOMrbjnGeqL6BzeGu8KNczmcZ1oc29+HVP3n9Sz20p4mYZaky8zzjMxYbgi+8kb9bb1zbCHxtniMwvEJGl4+zfXRWGyWJ81MI39KCYiOVh3EO0vbiL3utNi/JlIHE00jSwn0ZCQR2ZgDdNS01LE2q046WTXd9jX121tHDEXtmY6zeixhuTwAA3fkuKVlQZJHyO9J73PPe4kn4reYfyYSH6+ZrRwjBcfxOA+C9WJ8mLLD5PM4HrEliD2gtAspd2bYinisQk3G1ttyz5LKlrqLID0mSvBHX0jmB9/uWE5Q5w+vmsb2yN8mhXEfJrVt9GeMX4F4+AXz/NjU/tov836JnaxFSOInRjS5by3yL7klmaaWRlxmEziR12LGWNvA+S+eVs/RoR/bf8Ai5U0HJxVscHMnja4bi0vBHiArPaPYmqqpjI6oYW2aGg5ujYAGw3DW5U520NlznhuVy3e1tjN8mJHy9lzb5uS3abDTyuuxrljeTKoGonjB7nLoOz1HLDTxxzSc5I3MC65NxmJGp10Fh4JHI1wEalOPBONt75FkpUKVY9AhERAEREAREQBERAEREAREQBERAEREBxXlIB/lCe/WI7d3Nt/O66lsfURvo6cx2yiMNIHU4aOB7b3VLyh7LuqmtmhF5mCxb1vZvsO0H4rnWC49UUL3c2cuvTjeDlJHFu8HtVNGeNxvC4iTkspbnaKTBqeJ7pI4WNe693Buuu/uWc5TcXZHTGC95JracGgglx8rLM1XKXVObZjI2H2rFx8ATb4rJkzVMvrSyvPe4n9Pgjl0JxGOpuDhSWvZ7zP32coXT1UEbeuRpPY1puT5Bd9Kyuw2yfyNpkksZ3ixtuYPZHbxPYtUpirHVgMO6NP4tWERFY7giIgCIiAIiIApUKUBCKUQEIpRAQilEBCKUQEIpRAQilEBCKUQEIpRAQqzFsApqn66Jrj7WrXfibYq0RCsoqSs1cyP83VDe+WTu5w2/VX2FYNBTC0ETWcSNXHvcdSrFQosikKNODvGKRCKUUmpCKUQEIpRAQilEBCKUQEKURAf//Z" alt="Vegan Logo">
+        </div>
+    </div>
+    <img class="Hauptbilder" src="https://violifefoods.com/wp-content/uploads/2021/05/grill-me-burger-recipe.jpg" alt="Vegane Burger">
+    <div class="flex">
+        <div class="Zubereitung">
+            <h2>Zubereitung</h2>
+            <h2>Vorbereitungsdauer 30 Minuten</h2>
+            <h2>4 Portionen</h2>
+            <p>200g Burger Patties</p>
+            <p>1 Zucchini, in Streifen geschnitten</p>
+            <p>3 EL Olivenöl</p>
+            <p>1/2 Zitrone, Ausgepresst</p>
+            <p>4 Mittelgroße Portobello Pilze</p>
+            <p>Meersalz und schwarzer Pfeffer, nach Belieben</p>
+            <p>2 TL Sesamsamen</p>
+            <p>4 Burger-brötchen</p>
+            <p>Chili-Mayonnaise, VEGAN</p>
+            <p>1 große Tomate, in Scheiben geschnitten</p>
+            <p>Eine Handvoll Rucola-Blätter</p>
+            <p>Gemüsechips, als Beilage</p>
+        </div>
+        <div class="Anleitung">
+            <div>
+                <h2>Anleitung</h2>
+                <p>1. Schritt:</p>
+                <p>Die Zucchini in Streifen schneiden, mit Olivenöl und Zitronensaft beträufeln und beiseitestellen.</p>
+                <p>2. Schritt:</p>
+                <p>In einer Schüssel die Portobello-Pilze mit Olivenöl beträufeln und mit Salz und Pfeffer würzen. Für 5 Minuten auf den Grill legen, dann umdrehen und weitere 5 Minuten grillen.</p>
+                <p> 3. Schritt:</p>
+                <p>Die Violife Grill Me! mit Olivenöl bestreichen und ebenfalls auf den Grill legen und von beiden Seiten je 5 Minuten grillen. Mit Sesam bestreuen und beiseitestellen.</p>
+                <p>4. Schritt:</p>
+                <p>Die Burgerbrötchen mit der flachen Seite nach unten auf den Grill legen und 2 Minuten grillen, bis sie angeröstet sind.</p>
+                <p>5. Schritt:</p>
+                <p>Zum Belegen der Burger das untere Brötchen mit veganer Chili-Mayonnaise bestreichen, mit Rucolablättern, Zucchinistreifen, Portobello-Pilzen, Violife Grill Me! und Tomaten belegen. Das obere Brötchen daraufsetzen.</p>
+                <p>6. Schritt:</p>
+                <p>Heiß mit Gemüsechips als Beilage servieren!</p>
+            </div>
+        </div>
+    </div>
+    <div class="Youtube">    
+        <div>
+            <div id="ue3">
+                <h2>So machst du deine eigenen Patties:</h2>
+            </div>
+            <span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-PC8qRihMlE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </span>
+        </div>
+        <div class="Newsletter">
+            <div>
+                <h2 id="ue4">Newsletter bestellen</h2>
+                <p>Neue Rezepte direkt in deine Mailbox</p>
+                <input type="text">
+                <button>Bestellen</button>
+            </div>
+        </div>
+    </div>
+    <ul>
+        <li>
+            <a href="https://www.eat-this.org/impressum/" target="_blank">Impressum</a>
+        </li>
+        <li>
+            <a href="https://www.eat-this.org/datenschutz/" target="_blank">Datenschutserklärung</a>
+        </li>
+        <li>
+            <a href="https://www.eat-this.org/haftungsausschluss-disclaimer/" target="_blank">Haftungsausschuss</a>
+        </li>
+    </ul>
+</body>
+</html>
